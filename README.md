@@ -1,4 +1,4 @@
-## GDG Finder app (내 주변의 Google Developers Group 찾기 앱)
+## :earth_asia: GDG Finder app (내 주변의 Google Developers Group 찾기 앱) :earth_asia:
 Udacity 과정 Lesson 10 실습 완료!! <br>
 This is the toy app for Lesson 10 of the [Android App Development in Kotlin course on Udacity](https://classroom.udacity.com/courses/ud9012/).
 
