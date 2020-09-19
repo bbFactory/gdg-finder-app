@@ -18,8 +18,10 @@ class AddGdgFragment : Fragment() {
         ViewModelProvider(this).get(AddGdgViewModel::class.java)
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         val binding = AddGdgFragmentBinding.inflate(inflater)
 
         // Allows Data Binding to Observe LiveData with the lifecycle of this Fragment
@@ -36,6 +38,9 @@ class AddGdgFragment : Fragment() {
                 ).show()
                 viewModel.doneShowingSnackbar()
             }
+
+            binding.button.text = getText(R.string.done)
+            binding.button.contentDescription = getString(R.string.submitted)
         })
 
         setHasOptionsMenu(true)
